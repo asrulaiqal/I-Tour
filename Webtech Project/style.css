@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 nav
 {
@@ -92,17 +93,89 @@ a.btn-first
 }
 .advise
 {
+  color: #fff;
   padding: 120px;
   height: 450px;
   font-size: 20px;
   text-align: center;
+  background:url("plane.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
-.adviser h4
+.advise h4
 {
   font-size: 50px;
   font-weight: bold;
 }
-h5
+.advise h5
 {
   font-size: 30px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+.column p
+{
+  padding: 10px;
+text-align: center;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.aboutus
+{
+  text-align: center;
+}
+.aboutus img
+{
+  margin: 30px;
+}
+.team
+{
+  text-align: center;
+}
+.team .container
+{
+  padding-left: 240px;
+  object-fit: none;
 }
